@@ -6,7 +6,7 @@ public class Prvocinitele {
 		while (scanner.hasNextInt()) {
 			int cislo = scanner.nextInt();
 			
-			if (cislo < 1) {
+			if (cislo <= 1) {
 				System.out.printf("%d neresim.\n", cislo);
 				continue;
 			}
@@ -17,7 +17,9 @@ public class Prvocinitele {
 				if ((cislo % delitel) == 0) {
 					System.out.printf(" %d", delitel);
 					cislo /= delitel;
-				}
+				}else{
+                                    
+                        }
 				delitel++;
 			}
 			System.out.println();
